@@ -10,7 +10,7 @@ They can't stop the services from working nor change their APIs since they are r
 
 ## Diagram for the suggested solution
 
-Considering the main requirement, we should not be changing the Application Public Interface (API) from stablished and running solution. So, the changes suggested are going to be applied at the layer where the Backend communicates with other resources like DB or other that provoke the response time delays. For this code that layer are the Controllers which are in charge of saving the values to the DB.
+Considering the main requirement, we should not be changing the Application Public Interface (API) from stablished and running solution. So, the changes suggested are going to be applied at the layer where the Backend communicates with other resources like DB or other that provoke the response time delays. For this code, that layer are the Controllers which are in charge of saving the values to the DB.
 
 ![alt text](https://raw.githubusercontent.com/leo-fcx/post-invoices/master/images/diagram.png)
 
@@ -25,7 +25,7 @@ To run the scenario where there are delays in respose which could be directly pr
 
 To run the scenario where we apply the solution using a RabbitMQ instance, run: `USER=<username> PASS=<password> npm run start:optimized`. Where `username` and `password` are the credentials to connect to the RabbitMQ instance.
 
-Once you have any of above servers running you can proceed testing it by tunning: `node client.js 200`. This command simulates concurrent requests to the server where for this example `200` is the number of requests to send. 
+Once you have any of above servers up and running you can proceed testing it by executing: `node client.js 200`. This command simulates concurrent requests to the server where for this specific example `200` is the number of requests to send. 
 
 ## Available end-points
 
