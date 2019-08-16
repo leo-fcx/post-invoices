@@ -6,3 +6,7 @@ But such law has created a problem for Post, early on they have decided a set of
 
 They can't stop the services from working nor change their APIs since they are regulated by the government, what approach would you suggest to improve Post's situation?
 
+# Diagram for the suggested solution
+
+![alt text](https://raw.githubusercontent.com/leo-fcx/post-invoices/master/images/diagram.png)
+
